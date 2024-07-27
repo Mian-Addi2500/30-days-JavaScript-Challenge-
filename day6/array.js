@@ -15,7 +15,7 @@ let number = [1, 2, 3, 4, 5];
 
 // 🍁✍🍁 Task # 2  🍁✍🍁
 
-//🚩💠💠 Access the first and last elements of the array and log themto the console 🚩💠💠
+//🚩💠💠 Access the first and last elements of the array and log them to the console 🚩💠💠
 
 let number1 = [4, 5, 6, 7, 8, 9];
 
@@ -209,7 +209,7 @@ const matrix = [
   [7, 8, 9],
 ];
 
-console.log(matrix);
+//console.log(matrix);
 //🍀🍀  output is : [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] 🍀🍀
 
 /* ✍📝✍ 
@@ -221,7 +221,7 @@ If you want to log the matrix in a more readable format, you can use a loop to i
 ✍📝✍
 */
 for (let i = 0; i < matrix.length; i++) {
-  console.log(matrix[i]);
+  //console.log(matrix[i]);
 }
 
 /*🍀🍀  output is : 
@@ -238,7 +238,7 @@ Alternatively, you can use the console.table() method to log the matrix in a tab
 ✍📝✍
 */
 
-console.table(matrix);
+//console.table(matrix);
 
 /*🍀🍀  output is : 
 
@@ -263,7 +263,7 @@ let myTwoDArray = [
   [4, 5, 6],
   [7, 8, 9],
 ];
-console.log(myTwoDArray[1][2]);
+//console.log(myTwoDArray[1][2]);
 //🍀🍀  output is : [6]  🍀🍀
 
 /* 

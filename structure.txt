@@ -6,7 +6,12 @@
 
 //🚩💠💠  🚩💠💠
 
-//🍀🍀  output is : []  🍀🍀
+/*🍀🍀  output is : 
+
+
+
+
+  🍀🍀*/
 
 // ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
@@ -15,8 +20,55 @@
 //🚩💠💠 🚩💠💠
 
 
-//🍀🍀  output is : []  🍀🍀
+/*🍀🍀  output is : 
+
+
+
+
+  🍀🍀*/
 
 /* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
    ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+*/
+
+
+
+
+
+
+
+
+
+/*💢💢💢💢💢💢💢 Notes 💢💢💢💢💢💢💢
+
+            🔻 Feature Request  🔻
+
+
+
+1️⃣ 💨 Arithmetic Operations Script :- Write a script that performs basic arithmetic operations (additions , substraction, multiplication, division, remainder) on two numbers and log the results.
+
+2️⃣ 💨 Comparison and Logical Operators Script :- Create a script that compares two numbers using different comparison operators and combines conditions using logical operators, logging the results
+
+3️⃣ 💨 Ternary Operator Script :- Write a script that uses the ternary operator to determine if a number is positive or negative and log the results
+
+
+
+              🔻 Achievement  🔻
+
+💡 By the end of these activities, you will:💡
+
+🔷Understand and use arithmetic operators to perform basic calcultaions
+
+🔷Use assignment operators to modify the variable values
+
+🔷Compare values using comparison operators
+
+🔷Combine conditions using logical operators
+
+🔷 Use the ternary operator for concise Conditional expressions
+
+
+
+
+
 */
