@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="title" class="heading">
+        DOM learning on Chai aur code
+        <span style="display: none">test text</span>
+      </h1>
+      <h2 id="text">Lorem ipsum dolor sit.</h2>
+      <h2 id="removeDiv">Lorem ipsum dolor sit.</h2>
+      <h2 class="myClass">Lorem ipsum dolor sit.</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <input type="password" name="" id="" />
+
+      <ul id="myList">
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+      </ul>
+    </div>
+    <div class="styleClass">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum sequi est
+      vero saepe facere alias temporibus, ipsam, provident ratione voluptatibus
+      voluptatem aperiam nobis, ab dignissimos optio! Explicabo magni
+      consectetur iure!
+    </div>
+
+    <div
+      id="myElement"
+      style="
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        margin: 20px;
+      "
+    >
+      <button type="button" id="myBtn" style="cursor: pointer">
+        Click me!
+      </button>
+      <p id="myParagrphText">my paragraph text</p>
+    </div>
+    <img
+      src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="Girl in a jacket"
+      width="50"
+      height="60"
+      id="imgId"
+    />
+    <script>
+      // Task and Activites
+
+      //🔥💧🔥 Activity # 1  | Selecting and Manipulating Elements 🔥💧🔥
+
+      // 🍁✍🍁 Task # 1  🍁✍🍁
+
+      //🚩💠💠 Select an HTML element by its ID and change its text content. 🚩💠💠
+
+      document.getElementById("text").innerHTML =
+        "<h1>30 Days JS Challanges</h1>";
+
+      // 🍁✍🍁 Task # 2  🍁✍🍁
+
+      //🚩💠💠 Select an HTML element by its class and change its background color. 🚩💠💠
+
+      const boxElement = document.querySelector(".styleClass");
+      if (boxElement) {
+        boxElement.style.backgroundColor = "lightblue";
+        boxElement.style.color = "black";
+      } else {
+        console.log("Element not found");
+      }
+
+      /* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+   ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+*/
+
+      //🔥💧🔥 Activity # 2  | Creating  and appending  elements 🔥💧🔥
+
+      // 🍁✍🍁 Task # 3  🍁✍🍁
+
+      //🚩💠💠 Create a new div element with some text content and append it to the body   🚩💠💠
+
+      // create textDiv element
+
+      const textDiv = document.createElement("div");
+
+      // set text content of the div
+
+      textDiv.textContent = "my new div text";
+
+      // append div to the body
+
+      //document.body.appendChild(textDiv);
+
+      // 🍁✍🍁 Task # 4  🍁✍🍁
+
+      //🚩💠💠 Create a new 'li' element and add it to an existing 'ul' list  🚩💠💠
+
+      // get the "Ul" element
+
+      const list = document.getElementById("myList");
+
+      //create new "li" element
+
+      const newLiElement = document.createElement("li");
+
+      // add text to "li"
+
+      newLiElement.textContent = "new li text";
+
+      //append 'li' to 'ul'
+
+      list.appendChild(newLiElement);
+
+      /* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+   ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+*/
+      //🔥💧🔥 Activity # 3  | Removing Elements 🔥💧🔥
+
+      // 🍁✍🍁 Task # 5  🍁✍🍁
+
+      //🚩💠💠Select an HTML element and remove it from the DOM  🚩💠💠
+
+      //select element by its ID
+
+      const element = document.getElementById("removeDiv");
+
+      //remove elemnt
+
+      element.remove();
+
+      // ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+      // 🍁✍🍁 Task # 6  🍁✍🍁
+
+      //🚩💠💠Remove the last child of a specific HTML element 🚩💠💠
+
+      //select the parent element
+
+      const parent = document.getElementById("myList");
+
+      // Remove the last child element
+
+      parent.removeChild(parent.lastChild);
+
+      //Also, be aware that if the parent element has no children, lastChild or lastElementChild will be null, and attempting to remove it will throw an error. You might want to add a check before removing the child:
+
+      if (parent.lastChild) {
+        parent.removeChild(parent.lastChild);
+      }
+
+      /* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+   ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+*/
+      //🔥💧🔥 Activity # 4  | Modifying Attributes and Classes🔥💧🔥
+
+      // 🍁✍🍁 Task # 7  🍁✍🍁
+
+      //🚩💠💠Select an HTML element and change one of its attributes (e.g., 'src' of an 'img' tag)  🚩💠💠
+
+      //select img element
+
+      const img = document.getElementById("imgId");
+
+      // change 'src ' attribute of img
+
+      img.setAttribute(
+        "src",
+        "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+      );
+
+      // ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+      // 🍁✍🍁 Task # 8  🍁✍🍁
+
+      //🚩💠💠add and remove a CSS class to/from an HTML element🚩💠💠
+
+      // To add a CSS class to an HTML element, you can use the classList.add() method:
+
+      //select elemt
+
+      const myImg = document.getElementById("imgId");
+
+      //  Add the class using classList.add() method
+
+      myImg.classList.add("newCLass");
+      myImg.classList.add("oldCLass");
+
+      // To remove a CSS class from an HTML element, you can use the classList.remove() method:
+
+      myImg.classList.remove("oldCLass");
+
+      /* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+   ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+*/
+
+      //🔥💧🔥 Activity # 5  | Event Handling🔥💧🔥
+
+      // 🍁✍🍁 Task # 9  🍁✍🍁
+
+      //🚩💠💠add a Click event listener to a button that changes the text content of a paragraph  🚩💠💠
+
+      //select button and paragraph elements
+
+      const myBtn = document.getElementById("myBtn");
+
+      const myPText = document.getElementById("myParagrphText");
+
+      // Add a click event listener to the button
+
+      myBtn.addEventListener("click", () => {
+        //Change the text content of the paragraph
+        myPText.textContent = "button Clicked";
+      });
+      // ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+      // 🍁✍🍁 Task # 10  🍁✍🍁
+
+      //🚩💠💠Add a mouseover event listener to an element that changes its border color🚩💠💠
+      // Select the element
+
+      const myDivBorder = document.getElementById("myElement");
+
+      // Add a mouseover event listener
+
+      myDivBorder.addEventListener("mouseover", () => {
+        // Change the border color
+        myDivBorder.style.borderColor = "red";
+      });
+
+      // Add a mouseout event listener to revert the border color
+      myDivBorder.addEventListener("mouseout", () => {
+        // Change the border color
+        myDivBorder.style.borderColor = "black";
+      });
+
+      /* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+   ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ 🔶🔶 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+*/
+    </script>
+  </body>
+</html>
