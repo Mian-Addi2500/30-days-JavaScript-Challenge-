@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Handlings</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div style="margin: 10px">
+      <div
+        style="background-color: rgb(113, 100, 24); padding: 20px"
+        id="divElement"
+      >
+        <button class="myBtn">Click me!</button>
+        <p class="textElement">
+          Click button by 1 time and double click to change my Text
+        </p>
+        <h3 style="text-align: end">Hover Me!</h3>
+      </div>
+      <div style="margin-top: 10px">
+        <h3 style="padding-left: 100px">Double Click on image to see magic</h3>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png"
+          alt="Reload page"
+          srcset=""
+          width="200px"
+          id="myImg"
+        />
+      </div>
+      <div style="margin-top: 10px">
+        <h3 style="padding-left: 100px">
+          Right text in this input field to see magic
+        </h3>
+        <input id="myInput" type="text" placeholder="Press a key..." />
+        <p class="displayValue"></p>
+      </div>
+
+      <div
+        style="
+          margin-top: 10px;
+          background-color: rgb(113, 100, 24);
+          padding: 20px;
+        "
+      >
+        <h3 style="padding-left: 100px">Submission Form</h3>
+        <form id="myForm">
+          <input type="text" name="username" placeholder="Username" />
+          <input type="password" name="password" placeholder="Password" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div style="margin-top: 10px">
+        <h3 style="padding-left: 100px">
+          select the dropdown value and to see magic
+        </h3>
+        <select id="mySelect" style="margin-left: 220px">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        <p id="displayValue"></p>
+      </div>
+
+      <div style="margin-top: 10px">
+        <h3 style="padding-left: 100px">
+          select the dropdown value and to see magic
+        </h3>
+        <ul id="myList" style="margin-left: 220px">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <div style="margin-top: 10px">
+        <div id="parent">
+          <!-- Dynamically added child elements will be appended here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="eventHandling.js"></script>
+  </body>
+</html>
